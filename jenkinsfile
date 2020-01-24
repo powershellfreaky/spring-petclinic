@@ -9,7 +9,7 @@ node ('MVN'){
     stage('dummy'){
         sh 'pwd'
     }
-    stage ('Archive){
+    stage ('Archive'){
         archive 'target//*jar'
         junit 'target/surefile-reports/*.xml'
     }
